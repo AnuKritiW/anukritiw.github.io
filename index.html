@@ -628,18 +628,17 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="animation">
-              <a href="https://youtu.be/USUfPZZmSsk">
-
+            <li class="project-item  active" data-filter-item data-category="animation" data-portfolio-item>
+              <a href="#" class="project-link" data-modal-target="#codingmonkey">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/bob.jpg" alt="coding monkey bob thumbnail" loading="lazy">
+                  <img src="./assets/images/bob.jpg" alt="coding monkey bob thumbnail" loading="lazy" portfolio-img>
                 </figure>
 
-                <h3 class="project-title">Coding Monkey 808 “Bob”</h3>
+                <h3 class="project-title" data-portfolio-title>Coding Monkey 808 “Bob”</h3>
 
                 <p class="project-category">Animation</p>
 
@@ -647,7 +646,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="programming">
-              <a href="https://github.com/AnuKritiW/3D-Modeling">
+              <a href="#" class="project-link" data-modal-target="#teapot">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -919,6 +918,46 @@
           </ul>
 
         </section>
+
+        <!--
+          - portfolios modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="portfolios-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-image-box">
+                <img src="./assets/images/bob.jpg" alt="Bob" width="80" data-modal-img>
+              </figure>
+
+              <!-- <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
+            </div>
+
+            <div class="modal-content" id="codingmonkey">
+
+              <h4 class="h3 modal-title" data-modal-title>Coding Monkey 808 “Bob”</h4>
+
+              <time datetime="2022">2022</time>
+
+              <div data-modal-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, blanditiis! Fugit voluptas reprehenderit expedita pariatur suscipit dolor culpa blanditiis consectetur vitae libero ipsa, hic quidem illum voluptatibus voluptates voluptate obcaecati?
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
 
       </article>
 
