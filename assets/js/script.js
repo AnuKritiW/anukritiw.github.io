@@ -139,8 +139,9 @@ const portfoliosModalFunc = function () {
 // add click event to all modal items
 for (let i = 0; i < portfolioItem.length; i++) {
 
-  portfolioItem[i].addEventListener("click", function () {
+  portfolioItem[i].addEventListener("click", function (event) {
 
+    event.preventDefault(); // prevents scrolling up on the portfolio page
     modalImg.src = this.querySelector("[portfolio-img]").src;
     modalImg.alt = this.querySelector("[portfolio-img]").alt;
     modalTitle.innerHTML = this.querySelector("[data-portfolio-title]").innerHTML;
