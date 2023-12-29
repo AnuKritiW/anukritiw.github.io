@@ -68,6 +68,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --aubergine-green: hsl(50 , 49% , 37%);
 
   /**
    * typography
@@ -157,7 +158,25 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
+p {
+  color: var(--light-gray);
+  text-decoration: none;
+}
 
+p a {
+  color: var(--vegas-gold);
+  text-decoration: none;
+  display: inline;
+}
+
+p a:visited {
+  color: var(--aubergine-green);
+}
+
+p a:hover,
+p a:active {
+  text-decoration: underline;
+}
 
 
 
@@ -292,7 +311,20 @@ article.active {
   z-index: -1;
 }
 
+.h3 a {
+  color: var(--vegas-gold);
+  text-decoration: none;
+  display: inline;
+}
 
+.h3 a:visited {
+  color: var(--aubergine-green);
+}
+
+.h3 a:hover,
+.h3 a:active {
+  text-decoration: underline;
+}
 
 
 
@@ -812,7 +844,11 @@ main {
 
 .project-title,
 .project-category { margin-left: 10px; }
-.hidden-portfolio-details { visibility: hidden;}
+
+.hidden-portfolio-details {
+  visibility: hidden;
+  margin-left: 10px;
+}
 
 .project-title {
   color: var(--white-2);
@@ -826,6 +862,14 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.hidden-portfolio-details {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display:none
 }
 
 /* portfolio modal*/
