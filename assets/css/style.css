@@ -247,6 +247,10 @@ article.active {
   text-transform: capitalize;
 }
 
+.h6 {
+  color: var(--orange-yellow-crayola)
+}
+
 .h2 { font-size: var(--fs-1); }
 
 .h3 { font-size: var(--fs-2); }
